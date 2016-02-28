@@ -1,0 +1,149 @@
+@charset "utf-8"
+@require 'sprites'
+
+$white = #ffffff
+$gray = #dddddd
+$hfnormal = #f27320
+$hflight = #fbd2b7
+$hfhover = #bb500b
+$black = #404040
+$gray = #808080
+
+hf-scheme()
+  background-color $hfnormal
+  border-color $hfnormal
+  color $white
+
+&hover
+  background-color $hfhover
+  border-color $hfhover
+  color $gray
+
+selection
+  background $hflight
+
+-moz-selection
+  background $hflight
+
+.centered
+  text-align center
+
+header.custom
+  background-image: url("/img/header-bg.jpg");
+  border-bottom 5px solid $hfnormal
+
+a
+  color $hfnormal
+
+  &:hover
+    color $hfhover
+
+.clearfix
+  margin-bottom 30px
+
+.navbar
+  .navbar-header
+    .navbar-brand
+      color $white
+      text-transform uppercase
+
+      .orange
+        color $hfnormal
+
+    .navbar-toggle
+      hf-scheme()
+
+  .navbar-collapse
+    .navbar-nav
+      li
+        ahover,
+        afocus
+          color $hfnormal
+
+        &.active > a
+          color $white
+          background-color $hfnormal
+
+.img
+  display inline-block
+  height 80px
+  width 80px
+
+  &.networking
+    sprite($icon-networking)
+
+  &.learning
+    sprite($icon-learning)
+
+  &.hackers
+    sprite($icon-hackers)
+
+  &.fun
+    sprite($icon-fun)
+
+.btn
+  &.orange
+    hf-scheme()
+
+#map
+  height 400px
+
+section#contacto
+  spriteImage($map-image)
+  spritePosition($map-image)
+  background-color #222
+  background-repeat no-repeat
+
+  .section-heading
+    color $white
+
+  .section-subheading
+    font-size 18px
+    font-style italic
+
+  .form-group
+    textarea.form-control
+      font-size 16px
+      height 222px
+
+    input.form-control
+      font-size 16px
+      height auto
+
+    input, textarea
+      padding 20px
+
+ul.social-buttons li a
+  padding 3px
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active
+  background-color $hfnormal
+  text-decoration none
+
+#patrocinadores
+  padding 100px 0
+
+  .wrapper
+    .logo
+      display inline-block
+      margin 20px 30px
+
+      &.coparmex
+        sprite($coparmex)
+
+      &.bigman
+        sprite($bigman)
+
+      &.dub5
+        sprite($dub5)
+
+      &.intugo
+        sprite($intugo)
+
+    first-child
+      margin-left 0
+
+    last-child
+      margin-right 0

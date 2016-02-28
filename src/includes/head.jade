@@ -1,0 +1,12 @@
+meta(charset="utf-8")
+meta(http-equiv="Content-Type content=text/html; charset=Unicode/UTF-8")
+
+meta(name="viewport" content="width=device-width, initial-scale=1")
+
+each value, name in meta.names
+    meta(name=name content=value)
+
+each value, name in meta.properties
+    meta(property=name content=value)
+
+link(href="/all.css" rel="stylesheet" type="text/css")

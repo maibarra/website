@@ -1,0 +1,58 @@
+{
+  "copyright": "Copyright © Hackers/Founders 2015-2016",
+  "meeting": {
+    "description": "Te invitamos a nuestra reunión postmortem que se llevara a cabo el miércoles 2 de Marzo del 2016",
+    "location": "Zacatecas #80 esq. Rayón col. 5 de Mayo",
+    "hour": "7:00 PM",
+    "host": "Café Los Molinos",
+    "url": "http://www.meetup.com/hfsonora/events/229156985/",
+    "lat": "29.0926955",
+    "lng": "-110.9479256"
+  },
+  "meta": {
+    "names": {
+      "title": "HF Sonora - Comunidad Hackers/Founders Sonora",
+      "keywords": "hackers,founders,sonora,comunidad,hfsonora",
+      "description": "Una comunidad tecnológica basada en la pregunta ¿Qué Necesitas? conoce a tus futuros socios, solicita ayuda, aprende y emprende",
+      "robots": "index,follow",
+      "google": "nositelinkssearchbox",
+      "google-site-verification": "iPEzHwLKyDWeFnc5Rn44NwzAlId8fhr4I9mtXw7XuiQ",
+      "twitter:card": "summary",
+      "twitter:site": "@hfsonora",
+      "twitter:creator": "@_TonyMtz"
+    },
+    "properties": {
+      "og:url": "http://hfsonora.com",
+      "og:type": "product",
+      "og:title": "Comunidad Hackers/Founders Sonora",
+      "og:site_name": "HF Sonora",
+      "og:description": "Una comunidad tecnológica basada en la pregunta ¿Qué Necesitas? conoce a tus futuros socios, solicita ayuda, aprende y emprende",
+      "og:image": "http://hfsonora.com/static/hf_logo_orange_600_275.jpg",
+      "og:locale": "mx_ES",
+      "og:locale:alternate": "en_US"
+    }
+  },
+  "sponsors": [
+    {
+      "name": "Coparmex",
+      "class": "coparmex"
+    },
+    {
+      "name": "Dub5",
+      "class": "dub5"
+    },
+    {
+      "name": "Big Man Co.",
+      "class": "bigman"
+    },
+    {
+      "name": "Intugo",
+      "class": "intugo"
+    }
+  ],
+  "links": {
+    "facebook": "https://www.facebook.com/hfsonora/",
+    "twitter": "https://twitter.com/hfsonora/",
+    "meetup": "http://www.meetup.com/hfsonora/"
+  }
+}

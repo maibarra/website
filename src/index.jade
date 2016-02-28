@@ -1,0 +1,119 @@
+//- index.js
+
+extends ./layouts/default
+
+block content
+    //- Header
+    header.custom
+        .container
+            .intro-text
+                .intro-lead-in Bienvenido
+                .intro-heading ¡Mucho Gusto!
+                a.page-scroll.btn.btn-xl.orange(href='#acerca') Explorar
+
+    //- About
+    section#acerca
+        .container
+            .row
+                .col-sm-6
+                    h2 ¿Qué es H/F Sonora?
+                    p
+                        | Hackers and Founders es una comunidad basada en la pregunta: ¿Qué Necesitas?. Conoce a tus futuros socios, solicita ayuda, aprende y emprende.
+                    br
+                    p
+                        | Hackers and founders es una red global que cuenta con mas de&nbsp;
+                        strong 200,000 miembros
+                        |  en más de&nbsp;
+                        strong 41 países
+                        | , donde la gente de la comunidad local podría llegar a conectarse con comunidades de cualquier lugar donde exista&nbsp;
+                        strong H/F
+                        | .
+                    br
+                    p
+                        | Nos reunimos el último jueves de mes, y cambiamos constantemente nuestra sede entre empresas de la región noroeste, que nos invitan a sus instalaciones a disfrutar de la comunidad.
+                .col-sm-6
+                    .row.centered
+                        .col-sm-6
+                            .img.networking.centered
+                            h4 Networking
+                            p Crece tu red de contactos y encuentra a tu próximo socio.
+                        .col-sm-6
+                            .img.learning.centered
+                            h4 Aprendizaje
+                            p Aprende de los fracasos y éxitos de emprendedores.
+                        .col-sm-6
+                            .img.hackers.centered
+                            h4 Hackers/Geeks
+                            p
+                                | Hackers, Geeks, Diseñadores, Emprendedores y colados una comunidad multidisciplinaria.
+                        .col-sm-6
+                            .img.fun.centered
+                            h4 Cerveza Gratis
+                            p
+                                | En nuestras reuniones siempre habrá cerveza, al menos alguna vez tendrás una cerveza gratis.
+
+                .clearfix
+                .centered
+                    a.page-scroll.btn.btn-xl.orange(href='#reuniones') Participar
+
+    //- Meetings / Chapters
+    section#reuniones.bg-light-gray
+        .container
+            .row
+                .col-sm-4
+                    h3 ¿Próxima Reunión?
+                    p= meeting.description
+                    p
+                        strong Anfitrión&nbsp;
+                        | #{meeting.host}
+                    p
+                        strong Ubicación&nbsp;
+                        | #{meeting.location}
+                    p
+                        strong Hora&nbsp;
+                        | #{meeting.hour}
+
+                    a.btn.btn-xl.orange(href=meeting.url target='_blank') Participar
+                    .clearfix
+
+                .col-sm-8
+                    #map
+
+    //- Contact
+    section#contacto
+        .container
+            .row
+                .col-lg-12.text-center
+                    h2.section-heading Contacto
+            .row
+                .col-lg-12
+                    h2.section-subheading.text-muted Slack
+                    .well.centered
+                        p
+                            strong Únete a nuestro grupo:
+                        script(async='' defer='' src='https://hfsonora-slack.herokuapp.com/slackin.js?large')
+                    .clearfix
+                    h2.section-subheading.text-muted Lista de correos
+                    form#mc-embedded-subscribe-form(name='mc-embedded-subscribe-form', action='//hackfoundson.us12.list-manage.com/subscribe/post?u=8ff302a05f7c19862abae862f&id=422e10a4a7', method='post', target='_blank', novalidate='')
+                        .row
+                            .col-md-6
+                                .form-group
+                                    input#mce-LNAME.form-control(type='text' value='' name='LNAME' placeholder='Tu Nombre *' required='' data-validation-required-message='Este campo debe tener un Nombre.')
+                                    p.help-block.text-danger
+                            .col-md-6
+                                .form-group
+                                    input#mce-EMAIL.form-control(type='email' value='' name='EMAIL' placeholder='Tu Email *' required='' data-validation-required-message='Este campo debe contener un Email válido.')
+                                    p.help-block.text-danger
+                            .col-md-12.text-center
+                                button.btn.btn-xl.orange(type='submit') Suscribirse
+
+    //- Sponsors
+    section#patrocinadores.bg-light-gray
+        .container
+            .row
+                .col-sm-12
+                    h3 Patrocinadores
+                    .wrapper
+                        each sponsor in sponsors
+                            .logo(class=sponsor.class)
+                    .clearfix
