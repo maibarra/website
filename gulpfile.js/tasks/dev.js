@@ -12,7 +12,6 @@ module.exports = function (gulp, $, config, siteConfig) {
 
   gulp.task('dev:scripts', function () {
     var a = files.vendors.concat(files.scripts);
-    console.log(a);
     return gulp.src(a)
       .pipe($.concat('all.js'))
       .pipe(gulp.dest(dirs.build));
@@ -22,7 +21,7 @@ module.exports = function (gulp, $, config, siteConfig) {
   gulp.task('dev:connect', ['dev:jade', 'dev:stylus'], function () {
     $.connect.server({
       root: [dirs.dist],
-      port: 8000,
+      port: 9000,
       livereload: true
     });
   });

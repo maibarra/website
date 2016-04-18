@@ -1,13 +1,8 @@
 {
-  "name": "hfsonora",
-  "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "TonyMtz",
-  "license": "MIT",
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",

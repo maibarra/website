@@ -93,6 +93,7 @@ section#contacto
   spritePosition($map-image)
   background-color #222
   background-repeat no-repeat
+  padding 50px
 
   .section-heading
     color $white
@@ -130,6 +131,10 @@ ul.social-buttons li a:active
       display inline-block
       margin 20px 30px
 
+      &.extra
+        height 80px
+        float left
+
       &.coparmex
         sprite($coparmex)
 
@@ -147,3 +152,7 @@ ul.social-buttons li a:active
 
     last-child
       margin-right 0
+
+.pdf-format-icon
+  sprite($pdf-format-icon)
+  display: inline-block;

@@ -48,6 +48,14 @@
     {
       "name": "Intugo",
       "class": "intugo"
+    },
+    {
+      "name": "Guevara PI",
+      "class": "gpi"
+    },
+    {
+      "name": "24/7 Hermosillo",
+      "class": "h24-7"
     }
   ],
   "links": {

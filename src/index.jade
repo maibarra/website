@@ -62,6 +62,49 @@ block content
             .row
                 .col-sm-4
                     h3 ¿Próxima Reunión?
+                    p Te invitamos a nuestro meetup que realizamos el último jueves de cada mes a partir de las 8 PM. También organizamos conferencias e iremos agendando diversos tipos de encuentros.
+                    | Ven a conocer un poco mas de nuestras iniciativas.
+
+                    p &nbsp;
+
+                    a.btn.btn-xl.orange(href='http://www.meetup.com/hfsonora/' target='_blank') Participar
+
+                .col-sm-4
+                    h3 Instructivos y Registro
+
+                    //p &nbsp;
+
+                    p
+                        a(href='xyz.pdf') Acerca de los eventos
+                            span.pdf-format-icon
+                    p
+                        a(href='xyz.pdf') Registra tu pitch
+                            span.pdf-format-icon
+                    p
+                        a(href='abc.pdf') Manual para miembros
+                            span.pdf-format-icon
+                    p
+                        a(href='xyz.pdf') Manual para organizadores
+                            span.pdf-format-icon
+
+                .col-sm-4
+                    p Organizamos, participamos y promocionamos varios tipos de eventos.
+
+                    p
+                        | ¿Quieres participar con nosotros como anfitrión, organizador o asistente?
+                        | ¿Tienes un evento que promocionar?
+
+                    p
+                        a(href="mailto:contacto@hfsonora.com") Envíanos un email
+
+                    p
+                        a(href="#contacto") Comunícate con nosotros
+
+    //section#reuniones.bg-light-gray
+        .container
+            .row
+                .col-sm-4
+                    h3 ¿Próxima Reunión?
                     p= meeting.description
                     p
                         strong Anfitrión&nbsp;
@@ -116,4 +159,6 @@ block content
                     .wrapper
                         each sponsor in sponsors
                             .logo(class=sponsor.class)
+                        img.logo.extra(src='http://i.imgur.com/lK1KWjW.png')
+                        img.logo.extra(src='http://i.imgur.com/oEanZk6.png')
                     .clearfix
